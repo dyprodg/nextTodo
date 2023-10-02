@@ -14,8 +14,8 @@ export default function Home() {
 
   const handleTodoAdd = () => {
     if(newTodo.trim() === '') return;
-    const nextId = todoList.length + 1;
 
+    const nextId = todoList.length + 1;
     const newTodoItem = {id: nextId, task: newTodo, completed: false };
     setTodoList(prevList => [...prevList, newTodoItem]);
     setNewTodo('');
